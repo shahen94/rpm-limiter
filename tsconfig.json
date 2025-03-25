@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": ["src"],
+  "exclude": ["**/*.spec.ts", "**/__tests__/**", "dist", "node_modules"]
+}
