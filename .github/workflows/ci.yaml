@@ -22,10 +22,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn
 
       - name: Run tests with coverage
-        run: npm run test:coverage
+        run: yarn test
 
   publish:
     name: 🚀 Publish to NPM
@@ -44,10 +44,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn
 
       - name: Build the project
-        run: npm run build
+        run: yarn build
 
       - name: Publish to NPM
         run: npm publish --access public
