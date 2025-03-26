@@ -1,6 +1,6 @@
-# ⏱️ rpm-limiter
+# ⏱️ rpm-queue
 
-A lightweight, zero-dependency **rate limiter and queue manager** built in TypeScript. `rpm-limiter` helps you run functions at a controlled rate per minute — ideal for APIs with rate limits such as OpenAI, Gemini, or VertexAI.
+A lightweight, zero-dependency **rate limiter and queue manager** built in TypeScript. `rpm-queue` helps you run functions at a controlled rate per minute — ideal for APIs with rate limits such as OpenAI, Gemini, or VertexAI.
 
 > ✅ Supports both synchronous and queued execution based on Requests Per Minute (RPM).
 
@@ -20,7 +20,7 @@ A lightweight, zero-dependency **rate limiter and queue manager** built in TypeS
 ## 📦 Installation
 
 ```bash
-npm install rpm-limiter
+npm install rpm-queue
 ```
 
 ---
@@ -28,7 +28,7 @@ npm install rpm-limiter
 ## 🚀 Basic Usage
 
 ```typescript
-import { RPMQueue } from 'rpm-limiter';
+import { RPMQueue } from 'rpm-queue';
 
 const queue = new RPMQueue(5); // 5 requests per minute
 
