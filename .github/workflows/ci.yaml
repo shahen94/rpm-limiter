@@ -6,6 +6,15 @@ on:
   push:
     branches: [main]
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   test:
     name: 🧪 Run Tests
@@ -32,10 +41,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
 
     steps:
       - name: Checkout code
@@ -55,6 +60,3 @@ jobs:
 
       - name: Publish to NPM
         run: npx semantic-release
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
