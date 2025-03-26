@@ -1,6 +1,6 @@
 {
   "name": "rpm-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A rate limiting library for OpenAI's VertexAI API",
   "repository": {
     "type": "git",

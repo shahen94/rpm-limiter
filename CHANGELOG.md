@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/shahen94/rpm-queue/compare/v1.0.0...v1.0.1) (2025-03-26)
+
+
+### Bug Fixes
+
+* **package.json:** Added repository url ([3c8dd03](https://github.com/shahen94/rpm-queue/commit/3c8dd033711de79ef708f1a603c2674a6aeacbbd))
+
 # 1.0.0 (2025-03-26)
 
 
